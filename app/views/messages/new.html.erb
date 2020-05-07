@@ -1,0 +1,11 @@
+<h1 style="text-align: center;">Page title</h1>
+
+<%= simple_form_for(@message) do |f| %>
+  <div class="form-inputs container">
+    <%= f.input :content,
+                input_html: { autocomplete: "Leave me a message" } %>
+    <%= f.input :email,
+                input_html: { autocomplete: "email" } %>
+    <%= f.submit %>
+  </div>
+<% end %>
